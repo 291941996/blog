@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storm.apps.StormConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # 配置静态文件加载路径
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# 网站描述，用于SEO
+SITE_DESCRIPTION = "JerryZ的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动，静静寻觅生活的美好"
+
+# 网站关键词，用于SEO
+SITE_KEYWORDS = "JerryZ,静觅,网络,IT,技术,博客,Python"
+
+# 自定义user模型类
+AUTH_USER_MODEL = 'user.Ouser'
