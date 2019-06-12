@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -38,23 +39,23 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='crayon-css'  href='../static/css/crayon.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-theme-github-css'  href='../static/css/github.css' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-font-monaco-css'  href='../static/css/monaco.css' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='../static/css/style.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='page-list-style-css'  href='../static/css/page-list.css' type='text/css' media='all' />
-<link rel='stylesheet' id='l2h_style-css'  href='../static/css/latex.min.css' type='text/css' media='screen, print' />
-<link rel='stylesheet' id='l2h_print_style-css'  href='../static/css/print.min.css' type='text/css' media='print' />
-<link rel='stylesheet' id='style-css'  href='../static/css/style.css' type='text/css' media='all' />
-<script type='text/javascript' src='../static/js/jquery.min.js'></script>
+<link rel='stylesheet' id='crayon-css'  href='{%  static 'css/crayon.min.css ' %}' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-github-css'  href='{% static 'css/github.css ' %}' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='{% static 'css/monaco.css ' %}' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='{% static 'css/style.min.css ' %}' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css'  href='{% static 'css/page-list.css' %}' type='text/css' media='all' />
+<link rel='stylesheet' id='l2h_style-css'  href='{% static 'css/latex.min.css' %}' type='text/css' media='screen, print' />
+<link rel='stylesheet' id='l2h_print_style-css'  href='{% static 'css/print.min.css' %}' type='text/css' media='print' />
+<link rel='stylesheet' id='style-css'  href='{% static 'css/style.css' %}' type='text/css' media='all' />
+<script type='text/javascript' src='{% static 'js/jquery.min.js' %}'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/cuiqingcai.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
 var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"\u70b9\u51fb\u5c55\u5f00\u4ee3\u7801"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='../static/js/crayon.min.js'></script>
-<script type='text/javascript' src='../static/js/jquery.fitvids.js'></script>
+<script type='text/javascript' src='{% static 'js/crayon.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.fitvids.js' %}'></script>
 <link rel='https://api.w.org/' href='https://cuiqingcai.com/wp-json/' />
 <style>
 .latex_thm, .latex_lem, .latex_cor, .latex_defn, .latex_prop, .latex_rem{
@@ -82,7 +83,7 @@ a.bibtex_title{
             jQuery(document).ready( function() {
                 jQuery('.video').fitVids();
             });
-        </script><!--[if lt IE 9]><script src="../static/js/html5.js"></script><![endif]-->
+        </script><!--[if lt IE 9]><script src="{% static 'js/html5.js' %}"></script><![endif]-->
 
 <script>
 var _hmt = _hmt || [];
@@ -94,9 +95,9 @@ var _hmt = _hmt || [];
 })();
 </script>
 <meta name="360-site-verification" content="bdc579accc68a98f1258ebcce2266afa" />
-<script type="text/javascript" name="baidu-tc-cerfication" data-appid="5411405" src="../static/js/lightapp.js"></script>
+<script type="text/javascript" name="baidu-tc-cerfication" data-appid="5411405" src="{% static 'js/lightapp.js' %}"></script>
 <link rel="shortcut icon" type="image/x-icon" href="https://cuiqingcai.com/fav.png" />
-<script type="text/javascript" src="../static/js/main.js"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 <script type="text/javascript">
 
 </script>
@@ -161,13 +162,13 @@ var _hmt = _hmt || [];
 	<div class="content">
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
-<li><a target="_blank" href="https://cuiqingcai.com/5052.html" title="Python3网络爬虫开发实战教程"><img src="../static/picture/python-3网格爬虫开发实战-宣传图.jpg" title="Python3网络爬虫开发实战教程" alt="Python3网络爬虫开发实战教程" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/4320.html" title="Python3爬虫视频学习教程"><img src="../static/picture/wechatimg257-e1491842259390.jpeg" title="Python3爬虫视频学习教程" alt="Python3爬虫视频学习教程" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/455.html" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！"><img src="../static/picture/wallpaper_5226844-1-e1416818686775.jpg" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！" alt="干货！IT小伙伴们实用的网站及工具大集合！持续更新！" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/1479.html" title="PHP高级特性学习总结"><img src="../static/picture/wallpaper_5254663-e1426747804401.jpg" title="PHP高级特性学习总结" alt="PHP高级特性学习总结" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/1052.html" title="Python2爬虫学习系列教程"><img src="../static/picture/wallpaper_5254665-e1424499272248.jpg" title="Python2爬虫学习系列教程" alt="Python2爬虫学习系列教程" /></a></li>	</ul>
+<li><a target="_blank" href="https://cuiqingcai.com/5052.html" title="Python3网络爬虫开发实战教程"><img src="{% static 'picture/python-3网格爬虫开发实战-宣传图.jpg' %}" title="Python3网络爬虫开发实战教程" alt="Python3网络爬虫开发实战教程" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/4320.html" title="Python3爬虫视频学习教程"><img src="{% static 'picture/wechatimg257-e1491842259390.jpeg' %}" title="Python3爬虫视频学习教程" alt="Python3爬虫视频学习教程" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/455.html" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！"><img src="{% static 'picture/wallpaper_5226844-1-e1416818686775.jpg' %}" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！" alt="干货！IT小伙伴们实用的网站及工具大集合！持续更新！" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/1479.html" title="PHP高级特性学习总结"><img src="{% static 'picture/wallpaper_5254663-e1426747804401.jpg' %}" title="PHP高级特性学习总结" alt="PHP高级特性学习总结" /></a></li><li><a target="_blank" href="https://cuiqingcai.com/1052.html" title="Python2爬虫学习系列教程"><img src="{% static 'picture/wallpaper_5254665-e1424499272248.jpg' %}" title="Python2爬虫学习系列教程" alt="Python2爬虫学习系列教程" /></a></li>	</ul>
 </div>
 
 <div class="ws_thumbs">
 <div>
-<a target="_blank" href="#" title="Python3网络爬虫开发实战教程"><img src="../static/picture/timthumb.php" /></a><a target="_blank" href="#" title="Python3爬虫视频学习教程"><img src="../static/picture/timthumb.php" /></a><a target="_blank" href="#" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！"><img src="../static/picture/timthumb.php" /></a><a target="_blank" href="#" title="PHP高级特性学习总结"><img src="../static/picture/timthumb.php" /></a><a target="_blank" href="#" title="Python2爬虫学习系列教程"><img src="../static/picture/timthumb.php" /></a></div></div><div class="ws_shadow"></div>
-	</div><script type="text/javascript" src="../static/js/slider.js"></script>
+<a target="_blank" href="#" title="Python3网络爬虫开发实战教程"><img src="{% static 'picture/timthumb.php' %}" /></a><a target="_blank" href="#" title="Python3爬虫视频学习教程"><img src="{% static 'picture/timthumb.php' %}" /></a><a target="_blank" href="#" title="干货！IT小伙伴们实用的网站及工具大集合！持续更新！"><img src="{% static 'picture/timthumb.php' %}" /></a><a target="_blank" href="#" title="PHP高级特性学习总结"><img src="{% static 'picture/timthumb.php' %}" /></a><a target="_blank" href="#" title="Python2爬虫学习系列教程"><img src="{% static 'picture/timthumb.php' %}" /></a></div></div><div class="ws_shadow"></div>
+	</div><script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
 					<div><div class="left-ad" style="clear: both;background-color: #fff; width: 30%;float: left;margin-right:2%;"></div><div class="hot-posts">
 			<h2 class="title">热门排行</h2>
 			<ul><li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="1052" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">30969</span> 喜欢</a></span></p><span class="label label-1">1</span><a href="https://cuiqingcai.com/1052.html" title="Python2爬虫学习系列教程">Python2爬虫学习系列教程</a></li><li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="4320" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">3062</span> 喜欢</a></span></p><span class="label label-2">2</span><a href="https://cuiqingcai.com/4320.html" title="Python3爬虫视频学习教程">Python3爬虫视频学习教程</a></li><li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="927" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">2453</span> 喜欢</a></span></p><span class="label label-3">3</span><a href="https://cuiqingcai.com/927.html" title="Python爬虫入门一之综述">Python爬虫入门一之综述</a></li><li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="1319" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">2402</span> 喜欢</a></span></p><span class="label label-4">4</span><a href="https://cuiqingcai.com/1319.html" title="Python爬虫利器二之Beautiful Soup的用法">Python爬虫利器二之Beautiful Soup的用法</a></li><li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="947" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">2400</span> 喜欢</a></span></p><span class="label label-5">5</span><a href="https://cuiqingcai.com/947.html" title="Python爬虫入门三之Urllib库的基本使用">Python爬虫入门三之Urllib库的基本使用</a></li></ul>
@@ -175,7 +176,7 @@ var _hmt = _hmt || [];
 		<article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/javascript">JavaScript<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6533.html" title="为什么你们就是不能加个空格呢？">为什么你们就是不能加个空格呢？  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6533.html"><img class="thumb" src="../static/picture/timthumb.php" alt="为什么你们就是不能加个空格呢？" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6533.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="为什么你们就是不能加个空格呢？" /></a></div>
 			<span class="note"> 想写这篇文章很久了，也想做这件事很久了，我个人感觉自己是有强迫症的，所以一直有什么事让我看着不太舒服就想把它纠正过来。
 文字，也不例外。
 现在大家看各种新闻啊、文章啊，几乎每篇文章都会有点数字和英文的吧，比如就拿 Python 来说，看下面两句话：
@@ -189,7 +190,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6519.html" title="Python 中拼音库 PyPinyin 的用法">Python 中拼音库 PyPinyin 的用法  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6519.html"><img class="thumb" src="../static/picture/timthumb.php" alt="Python 中拼音库 PyPinyin 的用法" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6519.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="Python 中拼音库 PyPinyin 的用法" /></a></div>
 			<span class="note"> 最近碰到了一个问题，项目中很多文件都是接手过来的中文命名的一些素材，结果在部署的时候文件名全都乱码了，导致项目无法正常运行。
 后来请教了一位大佬怎么解决文件名乱码的问题，他说这个需要正面解决吗？不需要，把文件名全部改掉，文件名永远不要用中文，永远不要。
 我想他这么说的话，一定也是...</span>
@@ -201,7 +202,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/life/notes">个人随笔<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6511.html" title="从学校迈入职场">从学校迈入职场  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6511.html"><img class="thumb" src="../static/picture/timthumb.php" alt="从学校迈入职场" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6511.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="从学校迈入职场" /></a></div>
 			<span class="note"> 正式入职微软，提交了第一个 PR 之后，我坐在椅子上思考人生。终于我也变成了一名正式的企业员工，变成了一名正式的踏入社会的职业人士，从此我的学生生涯也算是画上了一个句号，不，更确切的说应该是画上了一个引号。
 和同事租了房子，生活条件算是还不错，有了属于自己的房间，有了专属自己的衣...</span>
 <p class="auth-span">
@@ -212,7 +213,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique">技术杂谈<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6509.html" title="如何使用 SSH 控制连接 Windows 服务器">如何使用 SSH 控制连接 Windows 服务器  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6509.html"><img class="thumb" src="../static/picture/timthumb.php" alt="如何使用 SSH 控制连接 Windows 服务器" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6509.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="如何使用 SSH 控制连接 Windows 服务器" /></a></div>
 			<span class="note"> 入职微软之后，这边大多数是使用 Windows 进行开发的，比如我的台式机是 Windows 的，还有一部分服务器是 Windows 的，当然 Linux 是也非常多。
 很多情况下我是使用自己的 Mac 笔记本来远程连接我的 Windows 机器来开发的。比如如果我在工位上，我会...</span>
 <p class="auth-span">
@@ -223,7 +224,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6485.html" title="逻辑回归的算法推导及案例对接">逻辑回归的算法推导及案例对接  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6485.html"><img class="thumb" src="../static/picture/timthumb.php" alt="逻辑回归的算法推导及案例对接" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6485.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="逻辑回归的算法推导及案例对接" /></a></div>
 			<span class="note"> 在线性回归模型中，我们实际上是建立了一个模型来拟合自变量和因变量之间的线性关系，但是在某些时候，我们要做的可能是一个分类模型，那么这里就可能用到线性回归模型的变种——逻辑回归，本节我们就逻辑回归来做一个详细的说明。
 实例引入
 我们还是以上一节的例子为例，张三、李四、王五、赵六都要...</span>
@@ -235,7 +236,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6462.html" title="程序猿的情人节怎么过？">程序猿的情人节怎么过？  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6462.html"><img class="thumb" src="../static/picture/timthumb.php" alt="程序猿的情人节怎么过？" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6462.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="程序猿的情人节怎么过？" /></a></div>
 			<span class="note"> 都说程序猿是一类不解风情的生物，“赚的多，花的少，死的早”已经成为了程序猿的标志，“眼镜、格子衫、垢面蓬头、拖鞋裤衩”已然也成了程序猿的代表形象，“代码、游戏、老湿”也已经快要成了程序猿的生命。
 但！有的时候，比如情人节，我们就可以发挥我们的特长了，我们程序猿也可以有自己的浪漫！...</span>
 <p class="auth-span">
@@ -246,7 +247,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique">技术杂谈<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6457.html" title="分享一套 MacBook 高效开发工具">分享一套 MacBook 高效开发工具  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6457.html"><img class="thumb" src="../static/picture/timthumb.php" alt="分享一套 MacBook 高效开发工具" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6457.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="分享一套 MacBook 高效开发工具" /></a></div>
 			<span class="note"> 作为一名程序员，能够利用好工具提高开发和工作效率是非常重要的。我个人使用的都是苹果系列产品，电脑为 MacBook Pro 15 寸，手机 iPhone 7P，另外还有一个 iPad Pro 和一副 Apple Watch。我一直觉得 Mac 是非常适合做程序开发的，它既有比较不...</span>
 <p class="auth-span">
 		<span class="muted"><i class="fa fa-user"></i> <a href="https://cuiqingcai.com/author/cqcre">崔庆才</a></span>
@@ -256,7 +257,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6454.html" title="还在一个个写规则？来了解下爬虫的智能化解析吧！">还在一个个写规则？来了解下爬虫的智能化解析吧！  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6454.html"><img class="thumb" src="../static/picture/timthumb.php" alt="还在一个个写规则？来了解下爬虫的智能化解析吧！" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6454.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="还在一个个写规则？来了解下爬虫的智能化解析吧！" /></a></div>
 			<span class="note"> 爬虫是做什么的？是帮助我们来快速获取有效信息的。然而做过爬虫的人都知道，解析是个麻烦事。
 比如一篇新闻吧，链接是这个：https://news.ifeng.com/c/7kQcQG2peWU，页面预览图如下：
 
@@ -269,7 +270,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6431.html" title="今天，我终于弄懂了字体反爬是个啥玩意！">今天，我终于弄懂了字体反爬是个啥玩意！  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6431.html"><img class="thumb" src="../static/picture/timthumb.php" alt="今天，我终于弄懂了字体反爬是个啥玩意！" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6431.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="今天，我终于弄懂了字体反爬是个啥玩意！" /></a></div>
 			<span class="note"> 大家好，我是四毛，欢迎关注我的公众号。
 有什么想要交流的可以在后台第一时间私我。
 
@@ -284,7 +285,7 @@ var _hmt = _hmt || [];
 <article class="excerpt">
 	<header><a class="label label-important" href="https://cuiqingcai.com/category/technique/python">Python<i class="label-arrow"></i></a><h2><a target="_blank" href="https://cuiqingcai.com/6408.html" title="第一次见到这种反爬虫。咋办？盘它。">第一次见到这种反爬虫。咋办？盘它。  </a></h2>
 	</header>
-	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6408.html"><img class="thumb" src="../static/picture/timthumb.php" alt="第一次见到这种反爬虫。咋办？盘它。" /></a></div>
+	<div class="focus"><a target="_blank" href="https://cuiqingcai.com/6408.html"><img class="thumb" src="{% static 'picture/timthumb.php' %}" alt="第一次见到这种反爬虫。咋办？盘它。" /></a></div>
 			<span class="note"> 大家好，我是四毛，欢迎大家关注我的公众号。
 
 今天在工作中，碰到了第一次碰见的反爬虫机制，感觉很有意思，在这里记录一下，希望对大家有帮助。
@@ -304,7 +305,7 @@ pyexecjs [执行JS]
 <aside class="sidebar">	
 <div class="widget widget_text"><div class="textwidget"><div class="social">
 
-<a href="https://weibo.com/cuiqingcai" rel="external nofollow" title="新浪微博" target="_blank"><i class="sinaweibo fa fa-weibo"></i></a><a  href="http://t.qq.com/CQCcqc123456?preview" rel="external nofollow" title="腾讯微博" target="_blank"><i class="tencentweibo fa fa-tencent-weibo"></i></a><a class="weixin"><i class="weixins fa fa-weixin"></i><div class="weixin-popover"><div class="popover bottom in"><div class="arrow"></div><div class="popover-title"></div><div class="popover-content"><img src="../static/picture/weixin.gif" ></div></div></div></a>
+<a href="https://weibo.com/cuiqingcai" rel="external nofollow" title="新浪微博" target="_blank"><i class="sinaweibo fa fa-weibo"></i></a><a  href="http://t.qq.com/CQCcqc123456?preview" rel="external nofollow" title="腾讯微博" target="_blank"><i class="tencentweibo fa fa-tencent-weibo"></i></a><a class="weixin"><i class="weixins fa fa-weixin"></i><div class="weixin-popover"><div class="popover bottom in"><div class="arrow"></div><div class="popover-title"></div><div class="popover-content"><img src="{% static 'picture/weixin.gif' %}" ></div></div></div></a>
 <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=cqc@cuiqingcai.com" rel="external nofollow" title="Email" target="_blank"><i class="email fa fa-envelope-o"></i></a><a href="?feed=rss2" rel="external nofollow" target="_blank"  title="订阅本站"><i class="rss fa fa-rss"></i></a>
 </div></div></div>
 
@@ -315,9 +316,9 @@ pyexecjs [执行JS]
         <div class='slider-wrapper theme-bar'>
             <div class='ribbon'></div>
             <div id='metaslider_2698' class='nivoSlider'>
-                <a href="https://cuiqingcai.com/1052.html" target="_blank"><img src="../static/picture/wallpaper_5263464.jpg" height="300" width="320" data-title="Python爬虫学习系列教程" title="Python爬虫学习系列教程" alt="Python爬虫学习系列教程" class="slider-2698 slide-1720" /></a>
-                <a href="https://cuiqingcai.com/4320.html" target="_blank"><img src="../static/picture/wallpaper_5226849-1.jpg" height="300" width="320" data-title="Python3爬虫学习视频教程" title="OpenGL绘图系列教程" alt="OpenGL绘图系列教程" class="slider-2698 slide-951" /></a>
-                <a href="https://cuiqingcai.com/4352.html" target="_blank"><img src="../static/picture/20-234x220.jpg" height="300" width="320" data-title="小白学爬虫系列教程" alt="" class="slider-2698 slide-4372" /></a>
+                <a href="https://cuiqingcai.com/1052.html" target="_blank"><img src="{% static 'picture/wallpaper_5263464.jpg' %}" height="300" width="320" data-title="Python爬虫学习系列教程" title="Python爬虫学习系列教程" alt="Python爬虫学习系列教程" class="slider-2698 slide-1720" /></a>
+                <a href="https://cuiqingcai.com/4320.html" target="_blank"><img src="{% static 'picture/wallpaper_5226849-1.jpg' %}" height="300" width="320" data-title="Python3爬虫学习视频教程" title="OpenGL绘图系列教程" alt="OpenGL绘图系列教程" class="slider-2698 slide-951" /></a>
+                <a href="https://cuiqingcai.com/4352.html" target="_blank"><img src="{% static 'picture/20-234x220.jpg' %}" height="300" width="320" data-title="小白学爬虫系列教程" alt="" class="slider-2698 slide-4372" /></a>
             </div>
         </div>
         
@@ -345,14 +346,14 @@ pyexecjs [执行JS]
         timer_metaslider_2698();
     </script>
 </div>
-<!--// meta slider--></div><div class="widget widget_text">			<div class="textwidget"><p><a href="http://www.zxiaoji.com/"><img class="aligncenter size-full wp-image-6547" src="../static/picture/360166.gif" alt="" width="360" height="166" /></a></p>
+<!--// meta slider--></div><div class="widget widget_text">			<div class="textwidget"><p><a href="http://www.zxiaoji.com/"><img class="aligncenter size-full wp-image-6547" src="{% static 'picture/360166.gif' %}" alt="" width="360" height="166" /></a></p>
 </div>
-		</div><div class="widget widget_text">			<div class="textwidget"><p><a href="https://www.abuyun.com/http-proxy/introduce.html"><img style="width:100%" src="../static/picture/601554968669_.pic_hd.jpg"/><br />
+		</div><div class="widget widget_text">			<div class="textwidget"><p><a href="https://www.abuyun.com/http-proxy/introduce.html"><img style="width:100%" src="{% static 'picture/601554968669_.pic_hd.jpg' %}"/><br />
 </a></p>
 </div>
-		</div><div class="widget widget_text">			<div class="textwidget"><a href="https://bbs.huaweicloud.com/expert"><img style="width:100%" src="../static/picture/261558669193_.pic_hd-e1559697400474.png"/>
+		</div><div class="widget widget_text">			<div class="textwidget"><a href="https://bbs.huaweicloud.com/expert"><img style="width:100%" src="{% static 'picture/261558669193_.pic_hd-e1559697400474.png' %}"/>
 </a></div>
-		</div><div class="widget widget_text">			<div class="textwidget"><p><a href="https://e.coding.net/?utm_source=jingmi&amp;utm_medium=banner&amp;utm_campaign=march2019"><img style="width: 100%;" src="../static/picture/371554791054_.pic_.png" /><br />
+		</div><div class="widget widget_text">			<div class="textwidget"><p><a href="https://e.coding.net/?utm_source=jingmi&amp;utm_medium=banner&amp;utm_campaign=march2019"><img style="width: 100%;" src="{% static 'picture/371554791054_.pic_.png' %}" /><br />
 </a></p>
 </div>
 		</div><div class="widget widget_archive"><div class="title"><h2>文章归档</h2></div>		<ul>
@@ -411,16 +412,16 @@ pyexecjs [执行JS]
 	<li><a href='https://cuiqingcai.com/date/2014/10'>2014年十月</a></li>
 	<li><a href='https://cuiqingcai.com/date/2014/09'>2014年九月</a></li>
 		</ul>
-		</div><div class="widget d_postlist"><div class="title"><h2>猜你喜欢</h2></div><ul><li><a href="https://cuiqingcai.com/5413.html" title="[Python3网络爬虫开发实战] 1.8-爬虫框架的安装" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="[Python3网络爬虫开发实战] 1.8-爬虫框架的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.8-爬虫框架的安装</span><span class="muted">2018-01-25</span><span class="muted">551评论</span></a></li>
-<li><a href="https://cuiqingcai.com/5432.html" title="[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装</span><span class="muted">2018-01-25</span><span class="muted">370评论</span></a></li>
-<li><a href="https://cuiqingcai.com/4725.html" title="小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）" /></span><span class="text">小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）</span><span class="muted">2017-07-12</span><span class="muted">359评论</span></a></li>
-<li><a href="https://cuiqingcai.com/2227.html" title="WordPress从Apache迁移到Nginx过程" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="WordPress从Apache迁移到Nginx过程" /></span><span class="text">WordPress从Apache迁移到Nginx过程</span><span class="muted">2015-11-13</span><span class="muted">347评论</span></a></li>
-<li><a href="https://cuiqingcai.com/4804.html" title="HTTP 206 获取文件部分内容和范围请求" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="HTTP 206 获取文件部分内容和范围请求" /></span><span class="text">HTTP 206 获取文件部分内容和范围请求</span><span class="muted">2017-09-15</span><span class="muted">327评论</span></a></li>
-<li><a href="https://cuiqingcai.com/5560.html" title="[Python3网络爬虫开发实战] 5.1.1-TXT文本存储" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="[Python3网络爬虫开发实战] 5.1.1-TXT文本存储" /></span><span class="text">[Python3网络爬虫开发实战] 5.1.1-TXT文本存储</span><span class="muted">2018-01-29</span><span class="muted">326评论</span></a></li>
-<li><a href="https://cuiqingcai.com/5965.html" title="【Python搞搞轻量博客】必要的知识" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="【Python搞搞轻量博客】必要的知识" /></span><span class="text">【Python搞搞轻量博客】必要的知识</span><span class="muted">2018-04-14</span><span class="muted">326评论</span></a></li>
-<li><a href="https://cuiqingcai.com/1890.html" title="Winpcap网络编程一之前言，实验要求，实验目标" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="Winpcap网络编程一之前言，实验要求，实验目标" /></span><span class="text">Winpcap网络编程一之前言，实验要求，实验目标</span><span class="muted">2015-07-13</span><span class="muted">322评论</span></a></li>
-<li><a href="https://cuiqingcai.com/2577.html" title="Python爬虫利器四之PhantomJS的用法" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="Python爬虫利器四之PhantomJS的用法" /></span><span class="text">Python爬虫利器四之PhantomJS的用法</span><span class="muted">2016-03-22</span><span class="muted">318评论</span></a></li>
-<li><a href="https://cuiqingcai.com/5456.html" title="[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装" ><span class="thumbnail"><img src="../static/picture/timthumb.php" alt="[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装</span><span class="muted">2018-01-25</span><span class="muted">297评论</span></a></li>
+		</div><div class="widget d_postlist"><div class="title"><h2>猜你喜欢</h2></div><ul><li><a href="https://cuiqingcai.com/5413.html" title="[Python3网络爬虫开发实战] 1.8-爬虫框架的安装" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="[Python3网络爬虫开发实战] 1.8-爬虫框架的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.8-爬虫框架的安装</span><span class="muted">2018-01-25</span><span class="muted">551评论</span></a></li>
+<li><a href="https://cuiqingcai.com/5432.html" title="[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.8.4-Scrapy-Redis的安装</span><span class="muted">2018-01-25</span><span class="muted">370评论</span></a></li>
+<li><a href="https://cuiqingcai.com/4725.html" title="小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）" /></span><span class="text">小白进阶之Scrapy第五篇（Scrapy-Splash配合CrawlSpider；瞎几把整的）</span><span class="muted">2017-07-12</span><span class="muted">359评论</span></a></li>
+<li><a href="https://cuiqingcai.com/2227.html" title="WordPress从Apache迁移到Nginx过程" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="WordPress从Apache迁移到Nginx过程" /></span><span class="text">WordPress从Apache迁移到Nginx过程</span><span class="muted">2015-11-13</span><span class="muted">347评论</span></a></li>
+<li><a href="https://cuiqingcai.com/4804.html" title="HTTP 206 获取文件部分内容和范围请求" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="HTTP 206 获取文件部分内容和范围请求" /></span><span class="text">HTTP 206 获取文件部分内容和范围请求</span><span class="muted">2017-09-15</span><span class="muted">327评论</span></a></li>
+<li><a href="https://cuiqingcai.com/5560.html" title="[Python3网络爬虫开发实战] 5.1.1-TXT文本存储" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="[Python3网络爬虫开发实战] 5.1.1-TXT文本存储" /></span><span class="text">[Python3网络爬虫开发实战] 5.1.1-TXT文本存储</span><span class="muted">2018-01-29</span><span class="muted">326评论</span></a></li>
+<li><a href="https://cuiqingcai.com/5965.html" title="【Python搞搞轻量博客】必要的知识" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="【Python搞搞轻量博客】必要的知识" /></span><span class="text">【Python搞搞轻量博客】必要的知识</span><span class="muted">2018-04-14</span><span class="muted">326评论</span></a></li>
+<li><a href="https://cuiqingcai.com/1890.html" title="Winpcap网络编程一之前言，实验要求，实验目标" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="Winpcap网络编程一之前言，实验要求，实验目标" /></span><span class="text">Winpcap网络编程一之前言，实验要求，实验目标</span><span class="muted">2015-07-13</span><span class="muted">322评论</span></a></li>
+<li><a href="https://cuiqingcai.com/2577.html" title="Python爬虫利器四之PhantomJS的用法" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="Python爬虫利器四之PhantomJS的用法" /></span><span class="text">Python爬虫利器四之PhantomJS的用法</span><span class="muted">2016-03-22</span><span class="muted">318评论</span></a></li>
+<li><a href="https://cuiqingcai.com/5456.html" title="[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装" ><span class="thumbnail"><img src="{% static 'picture/timthumb.php' %}" alt="[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装" /></span><span class="text">[Python3网络爬虫开发实战] 1.9.5-Scrapyrt的安装</span><span class="muted">2018-01-25</span><span class="muted">297评论</span></a></li>
 </ul></div><div class="widget d_tag"><div class="title"><h2>标签云</h2></div><div class="d_tags"><a title="156个话题" href="https://cuiqingcai.com/tag/python">Python (156)</a><a title="135个话题" href="https://cuiqingcai.com/tag/%e7%88%ac%e8%99%ab">爬虫 (135)</a><a title="31个话题" href="https://cuiqingcai.com/tag/php">PHP (31)</a><a title="23个话题" href="https://cuiqingcai.com/tag/js">JS (23)</a><a title="12个话题" href="https://cuiqingcai.com/tag/html">HTML (12)</a><a title="12个话题" href="https://cuiqingcai.com/tag/%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0">深度学习 (12)</a><a title="11个话题" href="https://cuiqingcai.com/tag/opengl">OpenGL (11)</a><a title="9个话题" href="https://cuiqingcai.com/tag/jquery">jQuery (9)</a><a title="8个话题" href="https://cuiqingcai.com/tag/tensorflow">TensorFlow (8)</a><a title="7个话题" href="https://cuiqingcai.com/tag/linux">Linux (7)</a><a title="7个话题" href="https://cuiqingcai.com/tag/wordpress">WordPress (7)</a><a title="7个话题" href="https://cuiqingcai.com/tag/winpcap">Winpcap (7)</a><a title="7个话题" href="https://cuiqingcai.com/tag/flask">Flask (7)</a><a title="6个话题" href="https://cuiqingcai.com/tag/css">CSS (6)</a><a title="6个话题" href="https://cuiqingcai.com/tag/security">Security (6)</a><a title="5个话题" href="https://cuiqingcai.com/tag/mysql">Mysql (5)</a><a title="4个话题" href="https://cuiqingcai.com/tag/git">Git (4)</a><a title="4个话题" href="https://cuiqingcai.com/tag/bootstrap">Bootstrap (4)</a><a title="4个话题" href="https://cuiqingcai.com/tag/net">Net (4)</a><a title="3个话题" href="https://cuiqingcai.com/tag/java">Java (3)</a><a title="3个话题" href="https://cuiqingcai.com/tag/python3">Python3 (3)</a><a title="3个话题" href="https://cuiqingcai.com/tag/%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0">机器学习 (3)</a><a title="2个话题" href="https://cuiqingcai.com/tag/cocos2d-x">Cocos2d-x (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/jsp">JSP (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/matlab">Matlab (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/photoshop">Photoshop (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/less">LESS (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/sass">SASS (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/ssh">SSH (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/nlp">NLP (2)</a><a title="2个话题" href="https://cuiqingcai.com/tag/elasticsearch">Elasticsearch (2)</a><a title="1个话题" href="https://cuiqingcai.com/tag/json">Json (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/redis">Redis (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/nginx">Nginx (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/appium">Appium (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/gulp">Gulp (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/laravel">Laravel (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e6%b5%8b%e8%af%95">测试 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/app">APP (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/scrapy%e5%88%86%e5%b8%83%e5%bc%8f">Scrapy分布式 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e8%a7%86%e9%a2%91">视频 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/scrapy">Scrapy (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e7%9f%a5%e4%b9%8e">知乎 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/neo4j">Neo4j (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/http">HTTP (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e7%ae%97%e6%b3%95">算法 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e4%bb%a3%e7%90%86">代理 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/seq2seq">Seq2Seq (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f">正则表达式 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/flask%e7%bc%93%e5%ad%98">Flask缓存 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/mac">Mac (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/sqlalchemy">Sqlalchemy (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e5%bc%82%e6%ad%a5">异步 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e5%8d%8f%e7%a8%8b">协程 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e7%9b%91%e6%8e%a7">监控 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/grafana">Grafana (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/influxdb">InfluxDB (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e5%a4%a7%e4%bc%97%e7%82%b9%e8%af%84">大众点评 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/%e6%80%bb%e7%bb%93">总结 (1)</a><a title="1个话题" href="https://cuiqingcai.com/tag/windows">Windows (1)</a></div></div><div class="widget widget_links"><div class="title"><h2>友情链接</h2></div>
 	<ul class='xoxo blogroll'>
 <li><a href="http://www.99banzou.com" target="_blank">99伴奏网</a></li>
@@ -502,7 +503,7 @@ pyexecjs [执行JS]
 var cpro_id="u2578794";
 (window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"250",pat:"17",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#00a67c",titSU:"0"}
 </script>
-<script src="../static/js/c.js" type="text/javascript"></script>
+<script src="{% static 'js/c.js' %}" type="text/javascript"></script>
 </div>
 <style>
 #BAIDU_SSP__wrapper_u2578794_1 {
@@ -512,7 +513,7 @@ display:none;
 display:none !important;
 }
 </style></div>
-		</div><div class="widget widget_text">			<div class="textwidget"><a href="https://edu.hellobi.com/course/157" style="display:none"><img src="../static/picture/wx20180104-140302.png"/></a></div>
+		</div><div class="widget widget_text">			<div class="textwidget"><a href="https://edu.hellobi.com/course/157" style="display:none"><img src="{% static 'picture/wx20180104-140302.png'%}"/></a></div>
 		</div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
@@ -548,19 +549,19 @@ display:none !important;
   },
 }); 
         </script>
-  <script data-cfasync="false" src="../static/js/mathjax.js"></script>
-<link rel='stylesheet' id='metaslider-nivo-slider-css'  href='../static/css/nivo-slider.css' type='text/css' media='all' property='stylesheet' />
-<link rel='stylesheet' id='metaslider-public-css'  href='../static/css/public.css' type='text/css' media='all' property='stylesheet' />
-<link rel='stylesheet' id='metaslider-nivo-slider-bar-css'  href='../static/css/bar.css' type='text/css' media='all' property='stylesheet' />
-<script type='text/javascript' src='../static/js/jquery.js'></script>
-<script type='text/javascript' src='../static/js/wp-embed.min.js'></script>
-<script type='text/javascript' src='../static/js/jquery.nivo.slider.pack.js'></script>
+  <script data-cfasync="false" src="{% static 'js/mathjax.js' %}"></script>
+<link rel='stylesheet' id='metaslider-nivo-slider-css'  href='{% static 'css/nivo-slider.css' %}' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css'  href='{% static 'css/public.css' %}' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-nivo-slider-bar-css'  href='{% static 'css/bar.css' %}' type='text/css' media='all' property='stylesheet' />
+<script type='text/javascript' src='{% static 'js/jquery.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/wp-embed.min.js' %}'></script>
+<script type='text/javascript' src='{% static 'js/jquery.nivo.slider.pack.js' %}'></script>
 <!-- xuanfu -->
  <script type="text/javascript">
     /*300*25 创建于 2015-02-23*/
     var cpro_id = "u1959047";
 </script>
-<script src="../static/js/s.js" type="text/javascript"></script>
+<script src="{% static 'js/s.js' %}" type="text/javascript"></script>
 <script>
 $(function(){
 $('.article-content p:has(img)').css('text-indent', 0)
