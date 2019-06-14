@@ -19,5 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # storm应用
-    url('', include('storm.urls', namespace='blog')),
+    url('', include('apps.storm.urls', namespace='blog')),
 ]

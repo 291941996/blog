@@ -84,7 +84,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=20, verbose_name='文章分类')),
                 ('slug', models.SlugField(unique=True)),
                 ('description', models.TextField(default='JerryZ的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动，静静寻觅生活的美好', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
-                ('bigcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='storm.BigCategory', verbose_name='大分类')),
+                ('bigcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.storm.BigCategory', verbose_name='大分类')),
             ],
             options={
                 'verbose_name': '分类',
