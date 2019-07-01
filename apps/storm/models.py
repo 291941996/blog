@@ -23,6 +23,7 @@ class BigCategory(models.Model):  # 网站导航菜单栏分类表
 		return self.name
 
 
+
 class Category(models.Model):  # 导航栏，分类下的下拉菜单分类
 
 	# 分类名字

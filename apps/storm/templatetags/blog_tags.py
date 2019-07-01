@@ -84,3 +84,9 @@ def get_friends():
 def get_carousel_list():
 	"""获取轮播图列表"""
 	return Carousel.objects.all()
+
+@register.simple_tag
+def get_title(category):
+	a = BigCategory.objects.filter(slug=category)
+	if a:
+		return a[0]
