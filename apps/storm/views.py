@@ -15,3 +15,30 @@ class IndexView(generic.ListView):
 	context_object_name = 'articles'
 
 
+def AboutView(request):
+	return render(request, 'about.html', {'category': 'about'})
+
+def MessageView(request):
+	return render(request, 'message.html', {'category': 'message'})
+
+def LinkView(request):
+	return render(request, 'link.html')
+
+
+def DonateView(request):
+	return render(request, 'donate.html', {'category': 'donate'})
+
+
+def ExchangeView(request):
+	return render(request, 'exchange.html', {'category': 'exchange'})
+
+
+def ProjectView(request):
+	return render(request, 'project.html', {'category': 'project'})
+
+
+def QuestionView(request):
+	return render(request, 'question.html', {'category': 'question'})
+
+
+
