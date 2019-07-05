@@ -1,7 +1,7 @@
     {%extends 'base_right.html'%}
     {% load  static %}
     {% load blog_tags %}
-    {% block title %}静觅 | JerryZ的个人网站{% endblock title %}
+    {% block title %}静觅 | JerryZ的个人博客{% endblock title %}
 
     {% block body%}
     <div class="content-wrap">
@@ -54,12 +54,16 @@
             </div>
             {% for article in page_obj %}
             <article class="excerpt">
+                <!--文章导航条-->
                 <header>
+                    <!--lower 统一英文字符小写-->
                     <a class="label label-important" href="/category/{{ article.category.bigcategory.name }}/{{ article.category.name|lower }}">{{ article.category.name }}<i class="label-arrow"></i></a>
+                    <!--文章标题-->
                     <h2>
                         <a target="_blank" href="/article/{{ article.slug }}" title="{{ article.title }}">{{ article.title }}</a>
                     </h2>
                 </header>
+                <!--文章缩略图-->
                 <div class="focus">
                     <a target="_blank" href="/article/{{ article.slug }}">
                         <img class="thumb" src="{{ article.img_link }}" alt="{{ article.title }}" /></a>
