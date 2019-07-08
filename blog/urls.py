@@ -20,4 +20,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # storm应用
     url('', include('apps.storm.urls', namespace='blog')),
+    # 用户
+    url(r'^accounts/$', include('user.urls', namespace='accounts')),
 ]

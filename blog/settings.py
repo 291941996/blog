@@ -138,3 +138,9 @@ SITE_KEYWORDS = "JerryZ,静觅,网络,IT,技术,博客,Python"
 
 # 自定义user模型类
 AUTH_USER_MODEL = 'user.Ouser'
+
+# 媒体文件收集
+MEDIA_URL = "/media/"
+MEDIA_ROOT =(
+    os.path.join(BASE_DIR, 'media')
+)
