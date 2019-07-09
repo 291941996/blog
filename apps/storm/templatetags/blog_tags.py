@@ -139,3 +139,36 @@ def get_article_next(acticle_id):
 		return acticle
 	else:
 		return
+
+# 返回文章列表模板
+@register.inclusion_tag('blog/tags/article_list.html')
+def load_article_summary(articles):
+	"""返回文章列表模板"""
+	return {'articles': articles}
+
+# 返回分页信息
+@register.inclusion_tag('blog/tags/pagecut.html', takes_context=True)
+def load_pages(context):
+	"""分页标签模板，不需要传递参数， 直接继承参数"""
+	return context
+
+@register.simple_tag
+def get_request_param(request, param, default=None):
+	"""获取请求参数"""
+	return request.POST.get(param) or request.GET.get(param, default)
+
+# 获取文章详情页下方的推荐阅读文章
+@register.simple_tag
+def get_category_article():
+	article_4 = get_article_list('views', 4)
+	article_8 = get_article_list('views', 8)
+	return {'article_4': article_4, 'article_8': article_8}
+
+# 获取文章kewords
+@register.simple_tag
+def get_article_kewords(acticle):
+	Keywords = []
+	keys = Keyword.objects.filter(article=acticle)
+	for key in keys:
+		Keywords.append(key.name)
+	return ','.join(Keywords)

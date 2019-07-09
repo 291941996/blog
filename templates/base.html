@@ -1,5 +1,5 @@
 {% load staticfiles %}
-{% load blog_tags %}
+{% load blog_tags static %}
 
 <!DOCTYPE HTML>
 <html>
@@ -171,12 +171,30 @@
         </header>
         <section class="container">
             <div class="speedbar">
+            <!--登录-->
+            <!--目前登录功能只有注册登录其它没必要没做-->
                 <div class="pull-right">
-                    <i class="fa fa-user"></i><a href="/wp-login.php?action=register">投稿</a>&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-power-off"></i><a href="https://cuiqingcai.com/wp-login.php">登录</a>
+                    {% if request.session.username|default:'' == '' %}
+                        <i class="fa fa-power-off"></i><a href="{% url 'accounts:login' %}?next={{ request.path }}">登录</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <i class="fa fa-user-plus"></i>
+                        <a href="{% url 'accounts:register' %}?next={{ request.path }}">注册</a>
+                    {% else %}
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user"></i>
+                    <a href="/">投稿</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <a href="{% url 'accounts:profile' %}?next={{ request.path }}">{{ request.session.username }}</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="{% url 'accounts:logout' %}?next={{ request.path }}">退出</a>
+                {% endif %}
                 </div>
                 <div class="toptip"><strong class="text-success"><i class="fa fa-volume-up"></i> </strong>   《Python3网络爬虫开发实战》赠书活动正在进行中！详情请戳<a href="https://cuiqingcai.com/6173.html">赠书活动</a>！欢迎参与！非常感谢！</div>
             </div>
+            <!--登录注册结束-->
+
+            <!--公告-->
+            <div class="toptip"><strong class="text-success"><i class="fa fa-volume-up"></i></strong>
+            {% get_active %}</div>
+            <!--公告结束-->
 
                 <!--右侧内容区-->
             {% block body %}{% endblock body %}
